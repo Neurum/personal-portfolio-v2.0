@@ -128,6 +128,7 @@ img:hover {
   color: #2f2f2f;
   height: 15rem;
   border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .card-header {
