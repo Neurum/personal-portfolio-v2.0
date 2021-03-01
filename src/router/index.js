@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Main from '../views/Main.vue';
 import Skills from '../views/Skills.vue';
-import Projects from '../views/Projects';
+import Projects from '../views/Projects.vue';
 import About from '../views/About.vue';
 import Contact from '../views/Contact.vue';
 

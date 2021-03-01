@@ -16,6 +16,6 @@ export default {
 
 <style scoped>
 .skills-content {
-  height: calc(100% - 8rem);
+  height: calc(100% - 8.5rem);
 }
 </style>

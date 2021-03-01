@@ -6,16 +6,16 @@
     <ul>
       <li class="nav-link"><router-link to="/">Home</router-link></li>
       <li class="nav-link">
-        <router-link :to="{ name: Skills }">Skills</router-link>
+        <router-link :to="{ name: 'Skills' }">Skills</router-link>
       </li>
       <li class="nav-link">
-        <router-link :to="{ name: Projects }">Projects</router-link>
+        <router-link :to="{ name: 'Projects' }">Projects</router-link>
       </li>
       <li class="nav-link">
-        <router-link :to="{ name: About }">About</router-link>
+        <router-link :to="{ name: 'About' }">About</router-link>
       </li>
       <li class="nav-link">
-        <router-link :to="{ name: Contact }">Contact</router-link>
+        <router-link :to="{ name: 'Contact' }">Contact</router-link>
       </li>
     </ul>
   </nav>
