@@ -21,6 +21,26 @@ export default {
 </script>
 
 <style scoped>
+button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  width: 100%;
+  background-color: #cacaca;
+  text-decoration: none;
+  border: none;
+  font-size: 2rem;
+}
+h2 {
+  font: inherit;
+  font-size: 3rem;
+  color: #cacaca;
+}
+p {
+  font-size: 1.5rem;
+  width: 80%;
+  text-align: center;
+  color: #cacaca;
+}
 .card {
   display: flex;
   flex-direction: column;
@@ -29,14 +49,18 @@ export default {
   padding-bottom: 3rem;
   width: 30%;
   height: 550px;
-  background-color: #cacaca;
-  color: #2f2f2f;
+  background-color: #2f2f2f;
 }
 .img {
   display: flex;
+  align-items: center;
   justify-content: center;
-  height: 40%;
+  height: 70%;
   width: 100%;
+  background-color: #cacaca;
+}
+img {
+  height: 80%;
 }
 .buttonDiv {
   width: 40%;
@@ -49,13 +73,5 @@ export default {
   padding-top: 3rem;
   height: 80%;
   width: 100%;
-}
-button {
-  padding: 10px 20px;
-  border-radius: 5px;
-  width: 100%;
-  background-color: #cacaca;
-  border: 1px solid red;
-  text-decoration: none;
 }
 </style>
