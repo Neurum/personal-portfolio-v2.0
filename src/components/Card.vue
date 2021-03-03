@@ -2,7 +2,7 @@
   <div class="skills-content">
     <div class="card">
       <div class="card-header">
-        <h3>Front-end Skills</h3>
+        <h3 class="first-text">Front-end Skills</h3>
       </div>
       <div class="icon-container">
         <img
@@ -20,7 +20,7 @@
     </div>
     <div class="card">
       <div class="card-header">
-        <h3>Back-end Skills</h3>
+        <h3 class="first-text">Back-end Skills</h3>
       </div>
       <div class="icon-container">
         <img
@@ -36,7 +36,7 @@
     </div>
     <div class="card">
       <div class="card-header">
-        <h3>Tools</h3>
+        <h3 class="first-text">Tools</h3>
       </div>
       <div class="icon-container">
         <img class="git" src="../assets/images/git-seeklogo.com.svg" />
@@ -128,7 +128,7 @@ img:hover {
   color: #2f2f2f;
   height: 15rem;
   border-radius: 5px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.7);
 }
 
 .card-header {
@@ -136,5 +136,8 @@ img:hover {
   justify-content: center;
   border-bottom: 1px solid #2f2f2f;
   width: 100%;
+}
+.first-text {
+  animation: fadein 2s;
 }
 </style>

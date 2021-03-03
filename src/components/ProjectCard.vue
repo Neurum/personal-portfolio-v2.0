@@ -5,8 +5,8 @@
         <img :src="require(`../assets/images/${project.img}.png`)" />
       </div>
 
-      <h2>{{ project.title }}</h2>
-      <p>{{ project.desc }}</p>
+      <h2 class="first-text">{{ project.title }}</h2>
+      <p class="second-text">{{ project.desc }}</p>
     </div>
     <div class="buttonDiv">
       <button>
@@ -33,6 +33,9 @@ button {
   text-decoration: none;
   border: none;
   font-size: 2rem;
+}
+button:focus {
+  outline-style: none;
 }
 button a {
   text-decoration: none;
@@ -88,6 +91,8 @@ p {
   height: 60%;
   width: 100%;
   background-color: #cacaca;
+  border-radius: 5px;
+  box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.7);
 }
 img {
   height: 80%;
@@ -103,5 +108,11 @@ img {
   padding-top: 3rem;
   height: 80%;
   width: 100%;
+}
+.first-text {
+  animation: fadein 2s;
+}
+.second-text {
+  animation: fadeintwo 2s;
 }
 </style>

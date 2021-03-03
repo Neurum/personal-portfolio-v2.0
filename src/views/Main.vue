@@ -1,8 +1,8 @@
 <template>
   <div class="intro-container">
     <div class="intro-text">
-      <h1>Hey, I'm Curt</h1>
-      <h2>
+      <h1 class="first-text">Hey, I'm Curt</h1>
+      <h2 class="second-text">
         I'm a full stack web developer that enjoys creating new and wonderful
         things.
       </h2>
@@ -48,10 +48,20 @@ h2 {
 }
 
 .raisedbox {
-  box-shadow: 6px 6px 15px black;
+  box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.7);
 }
 
 .intro-img img {
   height: 300px;
+}
+
+.first-text {
+  animation-name: fadein;
+  animation-duration: 2s;
+}
+
+.second-text {
+  animation-name: fadeintwo;
+  animation-duration: 2s;
 }
 </style>
