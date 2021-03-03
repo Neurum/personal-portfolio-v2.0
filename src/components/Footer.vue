@@ -26,6 +26,7 @@ footer {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  padding-bottom: 2rem;
 }
 
 h3 {
