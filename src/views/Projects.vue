@@ -23,6 +23,7 @@ export default {
           img: 'prize-picker-site',
           desc:
             'Site to input raffle contestants and randomly select a winner from a list.',
+          page: '/prize-winner',
         },
         {
           name: 'weatherApp',
@@ -30,12 +31,14 @@ export default {
           img: 'weather-app',
           desc:
             'Put in your city and state to see current weather and 7 day forecast.',
+          page: '/weather-app',
         },
         {
           name: 'personalSite',
           title: 'Personal Site',
           img: 'portfolio-project-img',
           desc: 'My personal portfolio site.',
+          page: '/personal-site',
         },
       ],
     };

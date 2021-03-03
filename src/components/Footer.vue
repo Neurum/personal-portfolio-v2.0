@@ -11,7 +11,7 @@
       </li>
     </ul>
     <h3>&copy; Curt House. All rights reserved.</h3>
-    <a href="#" class="logo">
+    <a href="/" class="logo">
       <span class="logo-text">CH</span>
     </a>
   </footer>

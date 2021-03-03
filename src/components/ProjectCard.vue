@@ -9,7 +9,11 @@
       <p>{{ project.desc }}</p>
     </div>
     <div class="buttonDiv">
-      <button>Learn More</button>
+      <button>
+        <router-link class="underline" :to="project.page"
+          >Learn More</router-link
+        >
+      </button>
     </div>
   </div>
 </template>
@@ -29,6 +33,32 @@ button {
   text-decoration: none;
   border: none;
   font-size: 2rem;
+}
+button a {
+  text-decoration: none;
+  color: #2f2f2f;
+  cursor: pointer;
+}
+a.underline {
+  position: relative;
+}
+
+a.underline:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #2f2f2f;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+a.underline:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
 }
 h2 {
   font: inherit;
@@ -55,7 +85,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 70%;
+  height: 60%;
   width: 100%;
   background-color: #cacaca;
 }

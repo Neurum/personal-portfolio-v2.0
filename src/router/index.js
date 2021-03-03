@@ -4,6 +4,9 @@ import Skills from '../views/Skills.vue';
 import Projects from '../views/Projects.vue';
 import About from '../views/About.vue';
 import Contact from '../views/Contact.vue';
+import PrizeWinner from '../views/PrizeWinner.vue';
+import WeatherApp from '../views/WeatherApp.vue';
+import PersonalSite from '../views/PersonalSite.vue';
 
 const routes = [
   {
@@ -30,6 +33,21 @@ const routes = [
     path: '/contact',
     name: 'Contact',
     component: Contact,
+  },
+  {
+    path: '/prize-winner',
+    name: 'PrizeWinner',
+    component: PrizeWinner,
+  },
+  {
+    path: '/weather-app',
+    name: 'WeatherApp',
+    component: WeatherApp,
+  },
+  {
+    path: '/personal-site',
+    name: 'PersonalSite',
+    component: PersonalSite,
   },
 ];
 
