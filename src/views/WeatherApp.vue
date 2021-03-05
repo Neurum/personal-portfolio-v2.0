@@ -3,31 +3,60 @@
     <div class="header">
       <h1 class="first-text">Weather App</h1>
       <p class="second-text">
-        Weather App Description Here
+        This is an application where a user can input their city and state and
+        see the current weather conditions as well as the 7 day forcast.
       </p>
     </div>
     <div class="purpose">
       <h2 class="second-text">Project Purpose and Goal</h2>
       <p class="second-text">
-        Weather App Purpose and Goal
+        I built this app because I was looking for a project that used APIs and
+        most of the weather apps I saw only had the current weather and I wanted
+        to do one with forecast information as well. Also, this would create a
+        more difficult project to help facilitate my understanding of consuming
+        APIs.
       </p>
     </div>
     <div class="video">
-      <video controls width="750" src="" type="video/mp4"></video>
+      <video
+        controls
+        muted
+        width="750"
+        src="../assets/videos/weather-app-video.mp4"
+        type="video/mp4"
+      ></video>
     </div>
     <div class="problems">
       <h2 class="second-text">Problems and Thought Process</h2>
       <p class="second-text">
-        Weather App Problems and thought process here.
+        I ran into several roadblocks with this project. First, I couldn't find
+        a weather API that would have current data as well as forecast data in
+        one API call. Eventually I found one but it required a coordinate input
+        instead of city and state. Now I have another problem, how do I get
+        coordinates from a city and state input. I searched and found a
+        different API for forward geocoding. This API allowed a city and state
+        input and returned a set of coordinates. I then had to put that
+        information into the weather API call so it would return the proper
+        data. Working with 2 separate APIs proved a bit challenging.
       </p>
       <p class="second-text">
-        Additional paragraph if needed.
+        Now I had to find out how to get that data to show up as well as change
+        the background based on the weather conditions returned. This challenged
+        my analytical thinking and I was able to make it work. So not only does
+        this app call 2 APIs it consumes the weather data and updates the main
+        background as a reflection of current data, but it also updates the
+        forecast cards with its own separate data and separate styling based on
+        that data as well.
       </p>
     </div>
     <div class="lessons">
       <h2 class="second-text">Lessons Learned</h2>
       <p class="second-text">
-        Weather App lessons learned
+        I learned a lot from this project. I learned how to consume API data
+        from 2 different sources and make them work together to get the data I
+        needed to populate the application. I also learned how to put that data
+        into it's own respective cards while having separate styling for each
+        card.
       </p>
     </div>
     <div class="contact">

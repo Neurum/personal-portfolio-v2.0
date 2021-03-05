@@ -3,31 +3,48 @@
     <div class="header">
       <h1 class="first-text">Personal Site</h1>
       <p class="second-text">
-        Personal Site Description Here
+        This project is my second version of my personal portfolio site. My
+        first site was only HTML and CSS. This site uses Vue and Vue Router.
       </p>
     </div>
     <div class="purpose">
       <h2 class="second-text">Project Purpose and Goal</h2>
       <p class="second-text">
-        Personal Site Purpose and Goal
+        This site had two purposes. One purpose was to redesign my first
+        portfolio site because it was created early in my learning. The site
+        needed a redesign using additional technologies that I had learned. The
+        second purpose was to gain a better understanding of Vue.js and Vue
+        Router. This allowed me to create a single page application with
+        multiple views thus making it faster.
       </p>
     </div>
     <div class="video">
-      <video controls width="750" src="" type="video/mp4"></video>
+      <video
+        controls
+        width="750"
+        src="../assets/videos/personal-portfolio-video.mp4"
+        type="video/mp4"
+      ></video>
     </div>
     <div class="problems">
       <h2 class="second-text">Problems and Thought Process</h2>
       <p class="second-text">
-        Personal Site Problems and thought process here.
-      </p>
-      <p class="second-text">
-        Additional paragraph if needed.
+        Learning Vue.js was new to me so creating this site using it as well as
+        Vue Router posed many challenges. Learning how the router system worked
+        as well as passing data throughout the application was new. I had to
+        work through many issues with data not passing down properly, mainly due
+        to small mistakes in syntax. I was able to get the data to populate
+        properly so the project cards would show for each project.
       </p>
     </div>
     <div class="lessons">
       <h2 class="second-text">Lessons Learned</h2>
       <p class="second-text">
-        Personal Site lessons learned
+        I really enjoyed building this with Vue.js because it gave me a better
+        understanding of the framework as well as learning more about site
+        design and data state management. This was a great learning experience.
+        I was intimidated by Vue at first but have gained a profound enjoyment
+        from using it in building applications.
       </p>
     </div>
     <div class="contact">
