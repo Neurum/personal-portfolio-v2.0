@@ -3,7 +3,8 @@
     <a href="/" class="logo">
       <span class="logo-text">CH</span>
     </a>
-    <ul>
+
+    <ul class="main-nav-bar">
       <li class="nav-link">
         <router-link class="underline" to="/">Home</router-link>
       </li>
@@ -28,11 +29,19 @@
         >
       </li>
     </ul>
+    <div class="mobile-nav-bar">
+      <Hamburger />
+    </div>
   </nav>
 </template>
 
 <script>
-export default {};
+import Hamburger from './Hamburger';
+export default {
+  components: {
+    Hamburger,
+  },
+};
 </script>
 
 <style scoped>
@@ -109,5 +118,26 @@ li {
 .logo:hover .logo-text {
   transform: translate(-50%, -50%) rotate(90deg);
   transition: transform 0.4s ease-in-out;
+}
+
+.mobile-nav-bar {
+  position: absolute;
+}
+
+@media screen and (max-width: 1200px) {
+  .main-nav-bar {
+    visibility: hidden;
+  }
+  .mobile-nav-bar {
+    visibility: visible;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main-nav-bar {
+    visibility: visible;
+  }
+  .mobile-nav-bar {
+    visibility: hidden;
+  }
 }
 </style>

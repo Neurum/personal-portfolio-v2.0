@@ -1,6 +1,7 @@
 <template>
   <div class="container">
     <Nav />
+
     <router-view />
     <Footer />
   </div>
@@ -13,6 +14,7 @@ export default {
   name: 'App',
   components: {
     Nav,
+
     Footer,
   },
 };
