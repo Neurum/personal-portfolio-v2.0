@@ -1,31 +1,29 @@
 <template>
-  <div id="nav-btn">
+  <div class="nav-btn">
     <button @click="navOpen" :class="openNav && 'active'" class="menu-btn">
       <span class="top"></span>
       <span class="mid"></span>
       <span class="bottom"></span>
     </button>
     <transition name="translateX">
-      <nav v-show="openNav">
-        <div class="mobile-menu-wrapper">
-          <ul class="main-nav-bar">
-            <li class="nav-link">
-              <router-link to="/">Home</router-link>
-            </li>
-            <li class="nav-link">
-              <router-link :to="{ name: 'Skills' }">Skills</router-link>
-            </li>
-            <li class="nav-link">
-              <router-link :to="{ name: 'Projects' }">Projects</router-link>
-            </li>
-            <li class="nav-link">
-              <router-link :to="{ name: 'About' }">About</router-link>
-            </li>
-            <li class="nav-link">
-              <router-link :to="{ name: 'Contact' }">Contact</router-link>
-            </li>
-          </ul>
-        </div>
+      <nav class="mobile-menu-nav" v-if="openNav">
+        <ul class="mobile-nav-bar">
+          <li @click="navOpen" class="nav-link">
+            <router-link to="/">Home</router-link>
+          </li>
+          <li @click="navOpen" class="nav-link">
+            <router-link :to="{ name: 'Skills' }">Skills</router-link>
+          </li>
+          <li @click="navOpen" class="nav-link">
+            <router-link :to="{ name: 'Projects' }">Projects</router-link>
+          </li>
+          <li @click="navOpen" class="nav-link">
+            <router-link :to="{ name: 'About' }">About</router-link>
+          </li>
+          <li @click="navOpen" class="nav-link">
+            <router-link :to="{ name: 'Contact' }">Contact</router-link>
+          </li>
+        </ul>
       </nav>
     </transition>
   </div>
@@ -48,7 +46,7 @@ export default {
 </script>
 
 <style scoped>
-#nav-btn {
+.nav-btn {
   width: 100;
   background: #2f2f2f;
   position: fixed;
@@ -64,6 +62,8 @@ export default {
   border: none;
   position: relative;
   z-index: 100;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
   cursor: pointer;
   outline: none;
@@ -80,7 +80,6 @@ export default {
   bottom: 0;
   left: 0;
   right: 0;
-  transition: all 0.4s ease;
 }
 
 .top {
@@ -115,31 +114,32 @@ nav {
   right: 0;
   z-index: 99;
 }
-.main-nav-bar {
-  width: 100%;
+.mobile-menu-wrapper {
   height: 100%;
+}
+.mobile-nav-bar {
+  width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  align-items: center;
+  font-size: 4rem;
+  list-style: none;
 }
 .nav-link a {
   color: #cacaca;
   list-style: none;
   text-decoration: none;
 }
-.translateX-enter {
-  transform: translateX(200px);
-  opacity: 0;
-}
 
-.translateX-enter-active,
+.mobile-menu-nav {
+  height: 100%;
+  transition: all 0.3s ease-in-out;
+}
+.translateX-enter-from,
 .translateX-leave-active {
-  transform-origin: top left 0;
-  transition: 0.2s ease;
-}
-
-.translateX-leave-to {
-  transform: translateX(200px);
+  right: -100%;
   opacity: 0;
 }
 </style>
