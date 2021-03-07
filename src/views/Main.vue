@@ -64,4 +64,26 @@ h2 {
   animation-name: fadeintwo;
   animation-duration: 2s;
 }
+
+@media screen and (max-width: 800px) {
+  .intro-container {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .intro-text {
+    width: 85%;
+    align-items: center;
+  }
+  h1 {
+    font-size: 4rem;
+    padding-bottom: 8rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .intro-img img {
+    height: 250px;
+  }
+}
 </style>

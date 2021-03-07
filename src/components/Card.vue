@@ -1,5 +1,5 @@
 <template>
-  <div class="skills-content">
+  <div class="skills-card-content">
     <div class="card">
       <div class="card-header">
         <h3 class="first-text">Front-end Skills</h3>
@@ -9,13 +9,25 @@
           class="html"
           src="../assets/images/iconfinder_5352_-_HTML5_1313567.svg"
         />
-        <img src="../assets/images/iconfinder_css3_2916226.svg" />
-        <img src="../assets/images/javascript-seeklogo.com.svg" />
-        <img src="../assets/images/bootstrap-seeklogo.com.svg" />
-        <img src="../assets/images/tailwind-css-seeklogo.com.svg" />
-        <img src="../assets/images/iconfinder_288_Sass_logo_4375066.svg" />
-        <img src="../assets/images/iconfinder_React.js_logo_1174949.svg" />
-        <img src="../assets/images/iconfinder_367_Vuejs_logo_4375161.svg" />
+        <img class="css" src="../assets/images/iconfinder_css3_2916226.svg" />
+        <img class="js" src="../assets/images/javascript-seeklogo.com.svg" />
+        <img class="bs" src="../assets/images/bootstrap-seeklogo.com.svg" />
+        <img
+          class="twcss"
+          src="../assets/images/tailwind-css-seeklogo.com.svg"
+        />
+        <img
+          class="sass"
+          src="../assets/images/iconfinder_288_Sass_logo_4375066.svg"
+        />
+        <img
+          class="react"
+          src="../assets/images/iconfinder_React.js_logo_1174949.svg"
+        />
+        <img
+          class="vue"
+          src="../assets/images/iconfinder_367_Vuejs_logo_4375161.svg"
+        />
       </div>
     </div>
     <div class="card">
@@ -111,12 +123,11 @@ img:hover {
   padding-bottom: 1.5rem;
 }
 
-.skills-content {
+.skills-card-content {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
-  padding-top: 6rem;
 }
 
 .card {
@@ -129,6 +140,7 @@ img:hover {
   height: 15rem;
   border-radius: 5px;
   box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.7);
+  margin-top: 5rem;
 }
 
 .card-header {
@@ -139,5 +151,68 @@ img:hover {
 }
 .first-text {
   animation: fadein 2s;
+}
+
+@media screen and (max-width: 700px) {
+  h3 {
+    font-size: 1.75rem;
+  }
+  .card {
+    width: 100%;
+  }
+  .heroku {
+    width: 3rem;
+  }
+
+  .css,
+  .js,
+  .bs,
+  .twcss,
+  .sass,
+  .react,
+  .vue {
+    width: 4rem;
+  }
+
+  .git,
+  .github,
+  .webpack {
+    width: 5rem;
+  }
+
+  .html {
+    width: 6rem;
+  }
+
+  .node,
+  .npm {
+    width: 7.5rem;
+  }
+
+  .express,
+  .babel {
+    width: 8.5rem;
+  }
+
+  .mongo {
+    width: 11rem;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .icon-container {
+    flex-wrap: wrap;
+  }
+  img {
+    margin: 1rem 3rem;
+    width: 4rem;
+  }
+  .card {
+    height: 18rem;
+    margin-top: 3rem;
+  }
+  .skills-card-content {
+    padding-top: 1rem;
+  }
 }
 </style>

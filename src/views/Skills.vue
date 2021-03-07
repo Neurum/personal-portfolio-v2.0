@@ -18,4 +18,10 @@ export default {
 .skills-content {
   height: calc(100% - 8.5rem);
 }
+
+@media screen and (max-width: 1200px) {
+  .skills-content {
+    height: calc(100% - 7.5rem);
+  }
+}
 </style>
