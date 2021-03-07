@@ -75,4 +75,11 @@ html {
     opacity: 1;
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .container {
+    margin: 2rem;
+    height: calc(100vh - 7rem);
+  }
+}
 </style>

@@ -50,8 +50,8 @@ export default {
   width: 100;
   background: #2f2f2f;
   position: fixed;
-  top: 27.5px;
-  right: 185px;
+  top: 20px;
+  right: calc(100% - 98.9%);
   z-index: 99;
 }
 .menu-btn {
@@ -71,7 +71,7 @@ export default {
 
 .menu-btn span {
   display: block;
-  width: 20px;
+  width: 30px;
   height: 2px;
   margin: auto;
   background: #cacaca;
@@ -80,13 +80,14 @@ export default {
   bottom: 0;
   left: 0;
   right: 0;
+  transition: all 0.4s ease;
 }
 
 .top {
-  transform: translateY(-8px);
+  transform: translateY(-12px);
 }
 .bottom {
-  transform: translateY(8px);
+  transform: translateY(12px);
 }
 
 button.active .top {
