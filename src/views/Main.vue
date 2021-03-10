@@ -69,6 +69,7 @@ h2 {
   .intro-container {
     flex-direction: column;
     justify-content: space-evenly;
+    height: 89%;
   }
   .intro-text {
     width: 85%;

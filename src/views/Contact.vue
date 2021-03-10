@@ -100,4 +100,21 @@ textarea {
 .second-text {
   animation: fadeintwo 2s;
 }
+@media screen and (max-width: 700px) {
+  .contact-section {
+    text-align: center;
+    height: 79%;
+  }
+  .text-area {
+    margin: 0 auto;
+    margin-bottom: 3rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  input,
+  .text-area {
+    width: 100%;
+  }
+}
 </style>

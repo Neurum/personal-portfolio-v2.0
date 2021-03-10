@@ -64,4 +64,44 @@ p {
 .second-text {
   animation: fadeintwo 2s;
 }
+@media screen and (max-width: 1400px) {
+  .about-text {
+    margin-left: 10rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .about-text {
+    margin-right: 9rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .about-section {
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 89%;
+    padding-bottom: 0;
+  }
+  .about-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .intro-img img {
+    height: 250px;
+  }
+  h1 {
+    margin: 0;
+    margin-bottom: 5rem;
+  }
+  p {
+    margin-bottom: 3rem;
+    line-height: 2rem;
+  }
+}
 </style>
