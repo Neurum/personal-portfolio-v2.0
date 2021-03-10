@@ -24,4 +24,9 @@ export default {
     height: calc(100% - 7.5rem);
   }
 }
+@media screen and (max-width: 600px) {
+  .skills-content {
+    height: 89%;
+  }
+}
 </style>

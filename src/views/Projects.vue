@@ -61,4 +61,9 @@ export default {
     padding: 0;
   }
 }
+@media screen and (max-width: 600px) {
+  .projects-area {
+    height: 89%;
+  }
+}
 </style>

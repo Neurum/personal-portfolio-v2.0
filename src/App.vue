@@ -78,8 +78,17 @@ html {
 
 @media screen and (max-width: 1200px) {
   .container {
-    margin: 2rem;
+    margin: 3rem 2rem;
     height: calc(100vh - 7rem);
+  }
+}
+@media screen and (max-width: 600px) {
+  .container {
+    margin-top: 2rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    overflow: hidden;
+    padding-bottom: 2rem;
   }
 }
 </style>

@@ -117,4 +117,9 @@ textarea {
     width: 100%;
   }
 }
+@media screen and (max-width: 600px) {
+  .contact-section {
+    height: 80%;
+  }
+}
 </style>
