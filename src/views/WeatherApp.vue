@@ -136,4 +136,32 @@ a.underline:hover:before {
 .second-text {
   animation: fadeintwo 2s;
 }
+@media screen and (max-width: 900px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  p {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  video {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header,
+  .purpose,
+  .problems,
+  .lessons,
+  .contact {
+    text-align: center;
+  }
+  .second-text {
+    width: 100%;
+  }
+}
 </style>
