@@ -4,9 +4,10 @@
       <div class="img">
         <img :src="require(`../assets/images/${project.img}.png`)" />
       </div>
-
-      <h2 class="first-text">{{ project.title }}</h2>
-      <p class="second-text">{{ project.desc }}</p>
+      <div class="text">
+        <h2 class="first-text">{{ project.title }}</h2>
+        <p class="second-text">{{ project.desc }}</p>
+      </div>
     </div>
     <div class="buttonDiv">
       <button>
@@ -114,5 +115,93 @@ img {
 }
 .second-text {
   animation: fadeintwo 2s;
+}
+.text {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 1600px) {
+  img {
+    height: 70%;
+  }
+  button {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 1450px) {
+  img {
+    height: 60%;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  p {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (max-width: 1300px) {
+  img {
+    height: 50%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  img {
+    height: 80%;
+  }
+  h2 {
+    width: 50%;
+  }
+  p {
+    margin-right: 1rem;
+  }
+  .img {
+    width: 30%;
+    margin-right: 3rem;
+  }
+  .card {
+    flex-direction: row;
+    width: 100%;
+    padding: 0;
+    height: 35%;
+  }
+  .top {
+    flex-direction: row;
+    padding: 0;
+  }
+  .buttonDiv {
+    width: 15%;
+  }
+  .text {
+    flex-direction: row;
+    width: 70%;
+  }
+}
+@media screen and (max-width: 750px) {
+  img {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .text {
+    flex-direction: column;
+    height: 50%;
+  }
+  h2 {
+    font-size: 2rem;
+    width: 70%;
+  }
+  img {
+    width: 80%;
+  }
+  .img {
+    width: 40%;
+  }
+  button {
+    padding: 5px 10px;
+  }
 }
 </style>

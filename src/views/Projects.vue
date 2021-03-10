@@ -53,4 +53,12 @@ export default {
   padding-top: 10rem;
   height: 90%;
 }
+
+@media screen and (max-width: 1200px) {
+  .projects-area {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+}
 </style>
